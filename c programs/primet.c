@@ -33,7 +33,7 @@ int main()
 void isPrime(int x)
 {
     int counter = 2;
-    while ( counter*counter <= x)
+    while ( counter < x)
     {
         if ( x % counter == 0 )
         {
@@ -41,6 +41,7 @@ void isPrime(int x)
         }
         counter ++;
     }
+    counter --;
     if ( x % counter == 0 )
     {
         printf("The number %d is not prime.\n", x);
